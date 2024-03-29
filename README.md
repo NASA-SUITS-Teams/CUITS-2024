@@ -1,13 +1,18 @@
 # 🦁 Welcome to Team CUITS Repo for the NASA SUITS Challenge (2023-2024)! 🚀💻
 
 ## Introduction
-### The following are features found within the unity project in the repo
-1. Persistent Brain (Main Manager): “TheBrain” takes the lead, managing scene switches, hand-tracked menus, and data persistence. It stays with you throughout your holographic journey. 
-2. CUITS Menu: A hand-tracked menu emerges when your palm faces up. Work-in-progress, but the scenes button lets you dive into the program’s universe. Back buttons ensure smooth navigation. 
-3. Map: Experience a static image of the Houston rockyard. The map object unfolds on pressing the map button, resizable and soon lockable to your gaze. 
-4. TSS Scene: The TSS scene transforms with MRTK prefabs. Seamless connection with buttons and input fields for a straightforward experience. 
-5. UIA: Included a UIA scene --- the very start of how we tackle UIA procedures. We plan to have a slate that the user can place next the the real UIA interface. Our slate will then light up to show when the corresponding switch needs to be flipped. 
-6. Serialized Json: We include a new script, Serialized_TSS, which builds off of the script provided by the tech team. We will use the base found in this script to
-Isolate specific values through a dictionary type structure.
+### The following are features found within the unity project in the repo 
+1. CUITS Menu: A hand-tracked menu emerges when your palm faces up. Work-in-progress, but the scenes button lets you dive into the program’s universe. Back buttons ensure smooth navigation. 
+2. Map: Experience a static image of the Houston rockyard. Map starts on follow mode, and can be locked to the world with a click of the map button.
+3. Egress/Ingress Buttons: Spawns a UIA Window that follows you, and is lockable with the same button. Clicking the respective egress/ingress will signal which procedures to go through (procedures still in progress)
+4. TSS Connect: Button in CUITS MENU - able to connect to the TSS, IP address is changeable through the front end, displays connection status in this menu
+5. Scripts: error.cs, checks all the nominal values given and will change a text object to display the appropriate response to each error
+   
 
-*We also include a very base implementation of an LMCC*
+### The following are features found within the LMCC project in the repo 
+1. Constant Monitoring: Real-time display of astronaut biometrics, suit data, rover status, and mission progress.
+2. Navigation: Complex map display with checkpoint management and pathfinding.
+3. Equipment Repait and Diagnosis: Procedures and checklists.
+4. Egress/Ingress: Procedural checklists.
+5. Rover Control: Real-time location and camera data display.
+6. Geological Sampling: Interactive geological map and rock data management.
